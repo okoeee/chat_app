@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'chat_page.dart';
 
 class AddPostPage extends StatelessWidget {
@@ -15,12 +14,8 @@ class AddPostPage extends StatelessWidget {
           children: <Widget>[
             RaisedButton(
               child: Text('戻る'),
-              onPressed: () async {
-                await Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) {
-                    return ChatPage();
-                  }),
-                );
+              onPressed: () {
+                Navigator.pop(context);
               },
             )
           ],
